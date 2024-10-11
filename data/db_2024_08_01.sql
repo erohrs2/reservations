@@ -246,7 +246,10 @@ INSERT INTO `event_types` (`id`, `description`, `service_space_id`) VALUES
 (11, 'HRC Training', 1),
 (12, 'New Membership Orientation', 8),
 (13, 'Machine Training', 8),
-(14, 'General Workshop', 8);
+(14, 'General Workshop', 8),
+(15, 'Woodshop', 8),
+(16, 'Metalshop', 8),
+(17, 'Digital Fabrication', 8);
 
 -- --------------------------------------------------------
 
