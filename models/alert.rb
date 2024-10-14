@@ -10,6 +10,9 @@ class Alert < ActiveRecord::Base
     ALERT_CATEGORY_ART_ALERTS = 5
 
     ALERT_CATEGORY_ENGINEERING_GENERAL_ALERTS = 6
+    ALERT_CATEGORY_ENGINEERING_WOODSHOP_ALERTS = 7
+    ALERT_CATEGORY_ENGINEERING_METALSHOP_ALERTS = 8
+    ALERT_CATEGORY_ENGINEERING_DIGITAL_FABRICATION_ALERTS = 9
 
     def self.category_options
         if SS_ID == 1
@@ -23,6 +26,9 @@ class Alert < ActiveRecord::Base
 		elsif SS_ID == 8
 			{
 				ALERT_CATEGORY_ENGINEERING_GENERAL_ALERTS => 'General Alerts',
+                ALERT_CATEGORY_ENGINEERING_WOODSHOP_ALERTS => 'Woodshop Alerts',
+                ALERT_CATEGORY_ENGINEERING_METALSHOP_ALERTS => 'Metalshop Alerts',
+                ALERT_CATEGORY_ENGINEERING_DIGITAL_FABRICATION_ALERTS => 'Digital Fabrication Alerts',
 			}
 		end
     end
